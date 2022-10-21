@@ -1,0 +1,16 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/ns/sparql-service-description#Service>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/ns/sparql-service-description#endpoint> ?o2.
+?n <http://www.w3.org/ns/sparql-service-description#feature> ?o3.
+?n <http://www.w3.org/ns/sparql-service-description#resultFormat> ?o4.
+?n <http://www.w3.org/ns/sparql-service-description#supportedLanguage> ?o5.
+?n <http://www.w3.org/ns/sparql-service-description#url> ?o6.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1) && (count(distinct ?o2)=1) && (count(distinct ?o3)=2) && (count(distinct ?o4)=8) && (count(distinct ?o5)=1) && (count(distinct ?o6)=1)
+        )
+    

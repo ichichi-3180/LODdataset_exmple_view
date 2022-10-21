@@ -1,0 +1,17 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->URI1[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->LITERAL1[label="http://www.openlinksw.com/schemas/virtrdf#qmvTableName
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->"http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable"[label="http://www.openlinksw.com/schemas/virtrdf#qmvATables
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->"http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn"[label="http://www.openlinksw.com/schemas/virtrdf#qmvColumns
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"[label="http://www.openlinksw.com/schemas/virtrdf#qmvFormat
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapValue"->"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"[label="http://www.openlinksw.com/schemas/virtrdf#qmvColumnsFormKey
+existprobab:1.0"]
+URI1[shape="ellipse"]
+LITERAL1[shape="box"]
+}

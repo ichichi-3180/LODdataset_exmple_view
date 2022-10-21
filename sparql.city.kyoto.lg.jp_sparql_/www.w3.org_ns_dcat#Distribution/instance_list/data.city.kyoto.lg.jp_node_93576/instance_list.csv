@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/created,2017-10-03T13:12:10+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/modified,2018-05-24T14:18:35+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/title,平成29年度版水道統計年報（第９章）68-81,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/date,2017-10-03T13:12:10+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://rdfs.org/sioc/ns#has_creator,https://data.city.kyoto.lg.jp/users/suidoskeieikikakud,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://rdfs.org/sioc/ns#num_replies,0,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/93576.rdf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/files/%E5%B9%B3%E6%88%9029%E5%B9%B4%E5%BA%A6%E7%89%88%E6%B0%B4%E9%81%93%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1%EF%BC%88%E7%AC%AC%EF%BC%99%E7%AB%A0%EF%BC%8968-81xlsx-0,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/description,,literal,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://purl.org/dc/terms/format,xlsx,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/93576.rdfjson,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/93576.ttl,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/93576.nt,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/93576,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/sites/default/files/resource-files/%E5%B9%B3%E6%88%9029%E5%B9%B4%E5%BA%A6%E7%89%88%E6%B0%B4%E9%81%93%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1%EF%BC%88%E7%AC%AC%EF%BC%99%E7%AB%A0%EF%BC%8968-81_0.xlsx,uri,,0.9994283427656777

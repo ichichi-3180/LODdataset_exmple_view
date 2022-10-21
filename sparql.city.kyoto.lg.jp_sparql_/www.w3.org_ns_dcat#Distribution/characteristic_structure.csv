@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/created,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/modified,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/title,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/date,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://rdfs.org/sioc/ns#has_creator,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,http://rdfs.org/sioc/ns#num_replies,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://www.w3.org/ns/dcat#accessURL,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,http://www.w3.org/ns/dcat#accessURL,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/description,literal,,0
+http://www.w3.org/ns/dcat#Distribution,http://purl.org/dc/terms/format,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://www.w3.org/2000/01/rdf-schema#seeAlso,uri,,0

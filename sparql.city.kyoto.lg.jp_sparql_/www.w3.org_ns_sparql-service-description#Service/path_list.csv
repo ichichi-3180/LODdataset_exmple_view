@@ -1,0 +1,6 @@
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o1,uri,,1.0,1
+n,http://www.w3.org/ns/sparql-service-description#endpoint,o2,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0,1
+n,http://www.w3.org/ns/sparql-service-description#feature,o3,uri,,1.0,2
+n,http://www.w3.org/ns/sparql-service-description#resultFormat,o4,uri,,1.0,8
+n,http://www.w3.org/ns/sparql-service-description#supportedLanguage,o5,uri,,1.0,1
+n,http://www.w3.org/ns/sparql-service-description#url,o6,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0,1

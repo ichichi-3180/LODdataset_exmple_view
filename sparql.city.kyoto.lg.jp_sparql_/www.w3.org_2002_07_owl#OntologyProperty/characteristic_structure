@@ -1,0 +1,14 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.w3.org/2002/07/owl#OntologyProperty"->"http://www.w3.org/2000/01/rdf-schema#Class"[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.w3.org/2002/07/owl#OntologyProperty"->"http://www.w3.org/2000/01/rdf-schema#Class"[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.w3.org/2002/07/owl#OntologyProperty"->LITERAL1[label="http://www.w3.org/2000/01/rdf-schema#label
+existprobab:1.0"]
+"http://www.w3.org/2002/07/owl#OntologyProperty"->"http://www.w3.org/2000/01/rdf-schema#Class"[label="http://www.w3.org/2000/01/rdf-schema#domain
+existprobab:1.0"]
+"http://www.w3.org/2002/07/owl#OntologyProperty"->"http://www.w3.org/2000/01/rdf-schema#Class"[label="http://www.w3.org/2000/01/rdf-schema#range
+existprobab:1.0"]
+LITERAL1[shape="box"]
+}

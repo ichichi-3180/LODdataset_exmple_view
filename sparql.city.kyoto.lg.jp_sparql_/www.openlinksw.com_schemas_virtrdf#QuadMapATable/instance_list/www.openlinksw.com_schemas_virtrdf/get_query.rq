@@ -1,0 +1,9 @@
+
+        select distinct  ?o1 ?o2 ?o3 where{
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmvaAlias> ?o2.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmvaTableName> ?o3.
+
+            filter (?n = <http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-pquad>)
+        }
+    

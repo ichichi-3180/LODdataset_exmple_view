@@ -1,0 +1,3 @@
+http://www.openlinksw.com/schemas/virtrdf#QuadMapATable,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-pquad,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.openlinksw.com/schemas/virtrdf#QuadMapATable,uri,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapATable,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-pquad,http://www.openlinksw.com/schemas/virtrdf#qmvaAlias,!sinv,literal,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapATable,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-pquad,http://www.openlinksw.com/schemas/virtrdf#qmvaTableName,sinv,literal,,1.0

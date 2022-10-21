@@ -1,0 +1,7 @@
+digraph{
+    graph [rankdir = LR];
+"skos:Concept"->"skos:Concept"[label="skos:narrower"]
+"skos:Concept"->"skos:Concept"[label="skos:broader"]
+"skos:Concept"->"skos:Concept"[label="skos:related"]
+"skos:Concept"->"foaf:Organization"[label="foaf:primaryTopic"]
+}

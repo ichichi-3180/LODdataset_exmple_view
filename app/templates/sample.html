@@ -1,0 +1,15 @@
+{% for class_info in class_triple_list %}
+    <br><br>
+    <table>
+        <tr><th>ドメイン</th><th>プロパティ</th><th>レンジ</th><th>出現頻度</th><th>レンジ数</th></tr>
+        {% for class_triple in class_info[2] %}
+        <tr>
+            <td>{{ class_triple["domain"]["content"] }}</td>
+            <td>{{ class_triple["property"]["display_name"] }}</td>
+            <td>{{ class_triple["range"]["content"] }}</td>
+            <td>{{ class_triple["probability"] }}</td>
+            <td>{{ class_triple["range_num"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endfor %}

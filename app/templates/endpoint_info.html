@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+</head>
+    </head>
+    <body>
+        <h1>{{ endpoint_info.name }}：{{ endpoint_info.url }}</h1>
+        <h2>特徴的なクラス間関係</h2>
+        <!-- <iframe src ="static/images/{{endpoint_info.id}}/characteristic_class_relation.svg"></iframe> -->
+        <object type="image/svg+xml" data="static/images/{{endpoint_info.id}}/characteristic_class_relation.svg">
+            <!-- <img src="static/images/{{endpoint_info.id}}/characteristic_class_relation.png"> -->
+        </object>
+        <!-- <svg xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="static/images/{{endpoint_info.id}}/characteristic_class_relation.svg"></use>
+        </svg> -->
+        <h2>YASGUI</h2>
+        <div id="yasgui"></div>
+        <script>
+            const yasgui = new Yasgui(document.getElementById("yasgui"), {
+                requestConfig: { endpoint: "http://mdlab.slis.tsukuba.ac.jp/lodc2019/onsen/query" },
+                copyEndpointOnNewTab: false,
+            });
+        </script>
+        <h2>特徴的な用例</h2>
+        <form action="/endpoint_info" method="POST">
+            <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
+            <input type="submit" value="違うデータを見る">
+        </form>
+        <div id="app">
+            <div class="vue">
+                <ul class="tabs">
+                    {% for i in range(characteristic_class_list|length) %}
+                        <li v-on:click="change('{{i+1}}')" v-bind:class="{'active': isActive === '{{i+1}}'}" >{{ characteristic_class_list[i]['name']}}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="contents">
+                    <li v-if="isActive === '1'">
+                        <button @click="click" v-model="show" v-show="!show">詳細を見る</button>
+                        <button @click="click" v-model="show" v-show="show">詳細を閉じる</button>
+                        <table class="data">
+                            <tr>
+                                <th>ドメイン</th>
+                                <th>プロパティ</th>
+                                <th>レンジ</th>
+                            </tr>
+                            {% for triple in characteristic_class_list[0]['hastriple'] %}
+                                {% if triple[3] >= 1 %}
+                                    <tr>
+                                        <td>{{ triple[0] }}</td>
+                                        <td>{{ triple[1] }}</td>
+                                        <td>{{ triple[2] }}</td>
+                                    </tr>
+                                {% else %}
+                                    <tr v-show="show">
+                                        <td>{{ triple[0] }}</td>
+                                        <td>{{ triple[1] }}</td>
+                                        <td>{{ triple[2] }}</td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </table>
+                    </li>
+                    {% for i in range((characteristic_class_list|length)-1) %}
+                        <li v-else-if="isActive === '{{i+2}}'">
+                            {% if (characteristic_class_list[i+1]['hastriple']|length) > 0 %}
+                                <table class="data">
+                                    <tr>
+                                        <th>ドメイン</th>
+                                        <th>プロパティ</th>
+                                        <th>レンジ</th>
+                                    </tr>
+                                {% for triple in characteristic_class_list[i+1]['hastriple'] %}
+                                    {% if triple[3] >= 1 %}
+                                        <tr>
+                                            <td>{{ triple[0] }}</td>
+                                            <td>{{ triple[1] }}</td>
+                                            <td>{{ triple[2] }}</td>
+                                        </tr>
+                                    {% else %}
+                                        <tr v-show="show">
+                                            <td>{{ triple[0] }}</td>
+                                            <td>{{ triple[1] }}</td>
+                                            <td>{{ triple[2] }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                                </table>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <h2>クラス間関係</h2>
+        <object type="image/svg+xml" data="static/images/{{endpoint_info.id}}/class_relation.svg">
+            <img src="static/images/{{endpoint_info.id}}/class_relation.svg">
+        </object>
+        <table class="data">
+            <tr>
+                <th>ドメインクラス</th>
+                <th>プロパティ</th>
+                <th>レンジクラス</th>
+            </tr>
+            {% for class_relation in class_relation_list %}
+            <tr>
+                <td>{{class_relation[0]}}</td>
+                <td>{{class_relation[1]}}</td>
+                <td>{{class_relation[2]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <!-- <h2>特徴的な用例</h2>
+        <form action="/endpoint_info" method="POST">
+            <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
+            <input type="submit" value="違うデータを見る">
+        </form>
+        <table border ="1">
+            <tr>
+                <th>ドメイン</th>
+                <th>プロパティ</th>
+                <th>レンジ</th>
+            </tr>
+            {% for triple in triple_list %}
+            <tr>
+                <td>{{ triple[0] }}</td>
+                <td>{{ triple[1] }}</td>
+                <td>{{ triple[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table> -->
+    </body>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                isActive: '1',
+                show: false,
+            },
+            methods: {
+                change: function(num){
+                    this.isActive = num
+                },
+                click: function(){
+                        this.show = !this.show
+                    }
+            }
+            })
+    </script>
+</html>

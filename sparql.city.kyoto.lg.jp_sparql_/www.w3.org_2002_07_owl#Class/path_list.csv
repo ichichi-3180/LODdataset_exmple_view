@@ -1,0 +1,14 @@
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o1,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#label,o2,literal,,0.9,1
+n,http://www.w3.org/2002/07/owl#complementOf,o3,uri,http://www.w3.org/2002/07/owl#Class,0,0
+n,http://www.w3.org/2002/07/owl#unionOf,o4,bnode,,0,0
+o4,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,o5,uri,http://www.w3.org/2002/07/owl#Class,1.0,1
+o4,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,o6,bnode,,1.0,1
+o6,http://www.w3.org/1999/02/22-rdf-syntax-ns#first,o7,bnode,http://www.w3.org/2002/07/owl#Class,1.0,1
+o6,http://www.w3.org/1999/02/22-rdf-syntax-ns#rest,o8,uri,http://www.w3.org/1999/02/22-rdf-syntax-ns#List,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,o9,uri,,0.7,1
+n,http://www.w3.org/2000/01/rdf-schema#comment,o10,literal,,0,0
+n,http://www.w3.org/2000/01/rdf-schema#subClassOf,o11,uri,http://www.w3.org/2002/07/owl#Class,0,0
+n,http://www.w3.org/2000/01/rdf-schema#subClassOf,o12,uri,http://www.w3.org/2000/01/rdf-schema#Class,0,0
+n,http://www.w3.org/2002/07/owl#deprecated,o13,typed-literal,,0,0
+n,http://purl.org/vocab/vann/usageNote,o14,literal,,0,0

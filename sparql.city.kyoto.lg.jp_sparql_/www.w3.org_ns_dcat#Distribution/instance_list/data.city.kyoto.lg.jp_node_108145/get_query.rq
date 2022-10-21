@@ -1,0 +1,17 @@
+
+        select distinct  ?o1 ?o2 ?o3 ?o4 ?o5 ?o6 ?o7 ?o8 ?o9 ?o10 ?o11 ?o12 ?o13 where{
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o2.
+?n <http://purl.org/dc/terms/created> ?o3.
+?n <http://purl.org/dc/terms/modified> ?o4.
+?n <http://purl.org/dc/terms/title> ?o5.
+?n <http://purl.org/dc/terms/date> ?o6.
+?n <http://rdfs.org/sioc/ns#has_creator> ?o7.
+?n <http://rdfs.org/sioc/ns#num_replies> ?o8.
+?n <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?o9.
+?n <http://www.w3.org/ns/dcat#accessURL> ?o10.
+?n <http://purl.org/dc/terms/format> ?o12.
+
+            filter (?n = <https://data.city.kyoto.lg.jp/node/108145>)
+        }
+    

@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/created,2020-02-14T14:09:54+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/modified,2021-03-22T14:34:35+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/title,コラム４ 観光消費の経済波及効果 ～経済波及効果って何なの？～,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/date,2020-02-14T14:09:54+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://rdfs.org/sioc/ns#has_creator,https://data.city.kyoto.lg.jp/users/sangyoseisakud,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://rdfs.org/sioc/ns#num_replies,0,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/102731.rdf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/files/%E3%82%B3%E3%83%A9%E3%83%A0%EF%BC%94-%E8%A6%B3%E5%85%89%E6%B6%88%E8%B2%BB%E3%81%AE%E7%B5%8C%E6%B8%88%E6%B3%A2%E5%8F%8A%E5%8A%B9%E6%9E%9C-%EF%BD%9E%E7%B5%8C%E6%B8%88%E6%B3%A2%E5%8F%8A%E5%8A%B9%E6%9E%9C%E3%81%A3%E3%81%A6%E4%BD%95%E3%81%AA%E3%81%AE%EF%BC%9F%EF%BD%9Epdf,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/description,,literal,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://purl.org/dc/terms/format,pdf,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/102731.rdfjson,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/102731.ttl,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/102731.nt,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/102731,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/sites/default/files/resource-files/%E3%82%B3%E3%83%A9%E3%83%A0%EF%BC%94%20%E8%A6%B3%E5%85%89%E6%B6%88%E8%B2%BB%E3%81%AE%E7%B5%8C%E6%B8%88%E6%B3%A2%E5%8F%8A%E5%8A%B9%E6%9E%9C%20%EF%BD%9E%E7%B5%8C%E6%B8%88%E6%B3%A2%E5%8F%8A%E5%8A%B9%E6%9E%9C%E3%81%A3%E3%81%A6%E4%BD%95%E3%81%AA%E3%81%AE%EF%BC%9F%EF%BD%9E.pdf,uri,,0.9994283427656777

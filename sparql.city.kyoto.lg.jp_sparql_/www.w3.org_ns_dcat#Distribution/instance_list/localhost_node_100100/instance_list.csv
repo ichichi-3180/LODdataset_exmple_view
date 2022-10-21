@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/created,2019-06-05T13:34:55+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/modified,2019-06-11T15:43:13+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/title,ソーシャルメディア運用ポリシー(20190531saiyou.pdf)【京都市職員採用案内「最京メンバー募集中」】下書きhogehoge,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/date,2019-06-05T13:34:55+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://rdfs.org/sioc/ns#has_creator,http://localhost/users/johoseisakud,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://rdfs.org/sioc/ns#num_replies,0,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,http://localhost/node/100100.rdf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://www.w3.org/ns/dcat#accessURL,http://localhost/files/20190531saiyoupdf,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/description,,literal,,0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://purl.org/dc/terms/format,pdf,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,http://localhost/node/100100.rdfjson,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,http://localhost/node/100100.ttl,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,http://localhost/node/100100.nt,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,http://localhost/node/100100,http://www.w3.org/ns/dcat#accessURL,http://localhost/sites/default/files/resource-files/20190531saiyou.pdf,uri,,0.9994283427656777

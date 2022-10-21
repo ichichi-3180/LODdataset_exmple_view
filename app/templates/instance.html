@@ -1,0 +1,450 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/toggle2.css">
+        <link rel="stylesheet" href="/static/css/toggle.css">
+        <link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://unpkg.com/@triply/yasqe/build/yasqe.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+        <script src="https://unpkg.com/@triply/yasqe/build/yasqe.min.js"></script>
+    </head>
+
+    <body>
+        <h1>{{ endpoint_info.name }}</h1>
+        <h2>クラス間関係</h2>
+        <img src="static/img/{{endpoint_info.id}}/structure.svg">
+        <h2>各クラスの近傍</h2>
+        <form action="/endpoint_info" method="POST">
+            <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
+            <input type="submit" value="違うデータを見る">
+        </form>
+        <div id="app">
+            <div>
+                <table class="table_switch"> 
+                    <tr><th colspan="2">表示プロパティの選択</th></tr>
+                    <tr><td class="optional">OPTIONAL</td><td class="no_range">OTHER</td></tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <label class="switch__label">
+                                    <input type="checkbox" id="switch" class="switch__input" v-model="optional"/>
+                                    <span class="switch__content"></span>
+                                    <span class="switch__circle"></span>
+                                    <!-- <span class="title">OFF</span> -->
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <label class="switch__label2">
+                                    <input type="checkbox" id="switch2" class="switch__input2" v-model="no_range"/>
+                                    <span class="switch__content2"></span>
+                                    <span class="switch__circle2"></span>
+                                    <!-- <span class="title2">OFF</span> -->
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <ul class="tabs">
+                {% for i in range(class_triple_list|length) %}
+                        <li v-on:click="change('{{i+1}}')" v-bind:class="{'active': isActive === '{{i+1}}'}" >{{ class_triple_list[i][0]}}</li>
+                {% endfor %}
+            </ul>
+            <ul class="contents">
+                <li v-if="isActive === '1'"> <!-- 最初のデータ-->
+                    <table class="data">
+                        <tr>
+                            <th>ドメイン</th>
+                            <th>プロパティ</th>
+                            <th>レンジ</th>
+                            <th>レンジデータ型</th>
+                        </tr>
+
+                        {% for triple in class_triple_list[0][2] %}
+                            {% if triple["probability"] > 0.99 %}
+                                <tr>
+                                    <!-- ドメイン -->
+                                    <td>{{ triple["domain"]["content"] }}</td>
+
+                                    <!-- プロパティ -->
+                                    <td><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+
+                                    <!-- レンジ -->
+                                    <td>
+                                        <!-- {{ triple["range"]["class"]|length }} -->
+                                        {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                            <table class="data">
+                                                <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                {% for j in range(triple["range"]["content"]|length) %}
+                                                    {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                        <tr>
+                                                            <td><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                                            <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                        <tr v-show="no_range">
+                                                            <td class="no_range"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                                            <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% else %}
+                                                        <tr v-show="optional">
+                                                            <td class="optional"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                                            <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor  %}
+                                            </table>
+                                        {% else %}
+                                            {{ triple["range"]["content"] }}
+                                        {% endif %}
+                                    </td>
+                                    
+                                    <!-- データ型 -->
+                                    <td>
+                                        {{ triple["range"]["datatype"] }}<br>
+                                        <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                    </td>
+                                </tr>
+                            {% elif triple["probability"] == 0 %}
+                                <tr v-show="no_range">
+                                    <td class="no_range">{{ triple["domain"]["content"] }}</td>
+                                    <td class="no_range"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                    <td class="no_range">
+                                        <!-- {{ triple["range"]["class"]|length }} -->
+                                        {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                            <table class="data">
+                                                <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                {% for j in range(triple["range"]["content"]|length) %}
+                                                    {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                        <tr>
+                                                            <td><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                        <tr v-show="no_range">
+                                                            <td class="no_range"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% else %}
+                                                        <tr v-show="optional">
+                                                            <td class="optional"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor  %}
+                                            </table>
+                                        {% else %}
+                                            {{ triple["range"]["content"] }}
+                                        {% endif %}
+                                    </td>
+
+                                    <td class="no_range">
+                                        {{ triple["range"]["datatype"] }}<br>
+                                        <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                    </td>
+                                </tr>
+                            {% else %}
+                                <tr v-show="optional">
+                                    <td class="optional">{{ triple["domain"]["content"] }}</td>
+                                    <td class="optional"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                    <td class="optional">
+                                        <!-- {{ triple["range"]["class"]|length }} -->
+                                        {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                            <table class="data">
+                                                <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                {% for j in range(triple["range"]["content"]|length) %}
+                                                    {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                        <tr>
+                                                            <td><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                        <tr v-show="no_range">
+                                                            <td class="no_range"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% else %}
+                                                        <tr v-show="optional">
+                                                            <td class="optional"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                            <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor  %}
+                                            </table>
+                                        {% else %}
+                                            {{ triple["range"]["content"] }}
+                                        {% endif %}
+                                    </td>
+
+                                    <td class="optional">
+                                        {{ triple["range"]["datatype"] }}<br>
+                                        <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </table>
+                </li>
+                {% for i in range((class_triple_list|length)-1) %}　<!-- ２回目以降のデータ-->
+                    <li v-else-if="isActive === '{{i+2}}'">
+                        <table class="data">
+                            <tr>
+                                <th>ドメイン</th>
+                                <th>プロパティ</th>
+                                <th>レンジ</th>
+                                <th>レンジデータ型</th>
+                            </tr>
+                            {% for triple in class_triple_list[i+1][2] %}
+                                {% if triple["probability"] > 0.99 %}
+                                    <tr>
+                                        <td>{{ triple["domain"]["content"] }}</td>
+                                        <td><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                        <td>
+                                            <!-- {{ triple["range"]["class"]|length }} -->
+                                            {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                                <table class="data">
+                                                    <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                    {% for j in range(triple["range"]["content"]|length) %}
+                                                        {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                            <tr>
+                                                                <td><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                            <tr v-show="no_range">
+                                                                <td class="no_range"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% else %}
+                                                            <tr v-show="optional">
+                                                                <td class="optional"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor  %}
+                                                </table>
+                                            {% else %}
+                                                {{ triple["range"]["content"] }}
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            {{ triple["range"]["datatype"] }}<br>
+                                            <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                        </td>
+                                    </tr>
+                                {% elif triple["probability"] == 0 %}
+                                    <tr v-show="no_range">
+                                        <td class="no_range">{{ triple["domain"]["content"] }}</td>
+                                        <td class="no_range"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</a></td>
+                                        <td class="no_range">
+                                            <!-- {{ triple["range"]["class"]|length }} -->
+                                            {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                                <table class="data">
+                                                    <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                    {% for j in range(triple["range"]["content"]|length) %}
+                                                        {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                            <tr>
+                                                                <td><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                            <tr v-show="no_range">
+                                                                <td class="no_range"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% else %}
+                                                            <tr v-show="optional">
+                                                                <td class="optional"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor  %}
+                                                </table>
+                                            {% else %}
+                                                {{ triple["range"]["content"] }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="no_range">
+                                            {{ triple["range"]["datatype"] }}<br>
+                                            <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr v-show="optional">
+                                        <td class="optional">{{ triple["domain"]["content"] }}</td>
+                                        <td class="optional"><a href="{{ triple["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["property"]["display_name"] }}</td>
+                                        <td class="optional">
+                                            <!-- {{ triple["range"]["class"]|length }} -->
+                                            {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
+                                                <table class="data">
+                                                    <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                    {% for j in range(triple["range"]["content"]|length) %}
+                                                        {% if triple["range"]["content"][j]["probability"] > 0.99 %}
+                                                            <tr>
+                                                                <td><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td>{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% elif triple["range"]["content"][j]["probability"] == 0 %}
+                                                            <tr v-show="no_range">
+                                                                <td class="no_range"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="no_range">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% else %}
+                                                            <tr v-show="optional">
+                                                                <td class="optional"><a href="{{ triple["range"]["content"][j]["property"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["content"][j]["property"]["display_name"] }}</a></td>
+                                                                <td class="optional">{{ triple["range"]["content"][j]["range"]["content"] }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor  %}
+                                                </table>
+                                            {% else %}
+                                                {{ triple["range"]["content"] }}
+                                            {% endif %}
+                                        </td>
+                                        <td class="optional">
+                                            {{ triple["range"]["datatype"] }}<br>
+                                            <a href="{{ triple["range"]["class"]["url"] }}" target="_blank" rel="noopener noreferrer">{{ triple["range"]["class"]["display_name"] }}</a>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </table>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <br>
+        <h2>{{endpoint_info.url}}</h2>
+        <div id="yasgui"></div>
+        <script>
+            const yasgui = new Yasgui(document.getElementById("yasgui"), {
+                requestConfig: { endpoint: "{{endpoint_info.url}}"},
+                copyEndpointOnNewTab: false,
+                endpointCatalogueOptions :{
+                    getData: () => {
+                        return [
+                            //List of objects should contain the endpoint field
+                            //Feel free to include any other fields (e.g. a description or icon
+                            //that you'd like to use when rendering)
+                            {
+                            endpoint: "https://dbpedia.org/sparql"
+                            },
+                            {
+                            endpoint: "https://query.wikidata.org"
+                            }
+                            // ...
+                        ];
+                    },
+                    //Data object keys that are used for filtering. The 'endpoint' key already used by default
+                    keys: [],
+                    //Data argument contains a `value` property for the matched data object
+                    //Source argument is the suggestion DOM element to append your rendered item to
+                    renderItem: (data, source) => {
+                        const contentDiv = document.createElement("div");
+                        contentDiv.innerText = data.value.endpoint;
+                        source.appendChild(contentDiv);
+                    }
+                }
+            });
+            const query = 'SELECT * WHERE {\n \
+                ?sub ?pred ?obj .\n\
+            } LIMIT 10' 
+            yasgui.getTab().yasqe.setValue(query);
+            yasgui.getTab().yasqe.getPrefixesFromQuery();
+            var prefix_info = {{ prefix_info|tojson }}
+            for (name_space in prefix_info) {
+                // console.log(name_space)
+                var dict = prefix_info[name_space] + ': <' + name_space + '>'
+                yasgui.getTab().yasqe.addPrefixes(dict);
+            }
+            // yasgui.getTab().yasqe.addPrefixes({ dbo: "http://dbpedia.org/ontology/" });
+            // // Add a new Tab. Returns the new Tab object.
+            // yasgui.addTab(
+            // true, // set as active tab
+            // { ...Yasgui.Tab.getDefaults(), name: "my new tab" }
+            // );
+
+            // // Get a Tab. Returns the current Tab if no tab id is given.
+            // yasgui.getTab("tab_id_x");
+        </script>
+        <!-- <div id="yasqe"></div>
+        <script>
+            const yasqe = new Yasqe(document.getElementById("yasqe"));
+            // Set query value in editor
+            yasqe.setValue("select * where {...}");
+
+            // Get query value from editor
+            yasqe.getValue();
+
+            // execute a query
+            yasqe.query({
+            url: "https://dbpedia.org/sparql",
+            reqMethod: "POST", // or "GET"
+            headers: { Accept: "..." /*...*/ },
+            args: { arg1: "val1" /*...*/ },
+            withCredentials: false,
+            });
+
+            // get whether we're in query or update mode
+            yasqe.getQueryMode();
+
+            // get the query type (select, ask, construct, ...)
+            yasqe.getQueryType();
+
+            // get prefixes map from the query string
+            yasqe.getPrefixesFromQuery();
+
+            // Add prefixes to the query.
+            yasqe.addPrefixes({ dbo: "http://dbpedia.org/ontology/" });
+
+            // set size of input area
+            // yasqe.setSize(500, 300);
+
+            // Collapsing prefixes if there are any. Use false to expand them.
+            yasqe.collapsePrefixes(true);
+        </script> -->
+        <h2>名前空間と接頭辞の組み合わせ</h2>
+        <table class="data">
+            <tr>
+                <th>名前空間URI</th>
+                <th>対応する接頭辞</th>
+            </tr>
+            {% for prefix in prefix_info %}
+                <tr>
+                    <td>{{prefix}}</td>
+                    <td>{{prefix_info[prefix]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                isActive: '1',
+                show: false,
+                optional:false,
+                no_range:false,
+            },
+            methods: {
+                change: function(num){
+                    this.isActive = num
+                },
+                click: function(){
+                        this.show = !this.show
+                    }
+            }
+            })
+    </script>
+    <!-- <script>
+        const checkbox = document.getElementById('switch');
+        checkbox.addEventListener('click', () => {
+            const title = document.querySelector('.title');
+            title.textContent = checkbox.checked ? 'ON' : 'OFF';
+        });
+    </script> -->
+</html>

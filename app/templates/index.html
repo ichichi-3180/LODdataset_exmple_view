@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+    <h1>LODデータセット　理解支援システム</h1>
+    <table class="data">
+        <tr>
+            <th>SPARQL Endpoint Name</th>
+            <th>SPARQL Endpoint URL</th>
+            <th></th>
+        </tr>
+    {% for endpoint_info in endpoint_info_list %}
+    <tr>
+        <td>{{endpoint_info.name}}</td>
+        <td>{{endpoint_info.url}}</td>
+        <td>
+            <form action="/endpoint_info" method="POST">
+                <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
+                <input type="submit" value="詳細を見る">
+            </form>
+        </td>
+        
+    </tr>
+    {% endfor %}
+    </table>
+    </body>
+</html>

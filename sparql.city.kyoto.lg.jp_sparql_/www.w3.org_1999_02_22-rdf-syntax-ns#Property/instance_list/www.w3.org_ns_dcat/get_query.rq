@@ -1,0 +1,9 @@
+
+        select distinct  ?o1 ?o2 ?o3 ?o4 ?o5 ?o6 ?o7 ?o8 ?o9 ?o10 ?o11 where{
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/2000/01/rdf-schema#label> ?o3.
+?n <http://www.w3.org/2000/01/rdf-schema#domain> ?o5.
+
+            filter (?n = <http://www.w3.org/ns/dcat#granularity>)
+        }
+    

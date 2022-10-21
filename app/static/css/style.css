@@ -1,0 +1,103 @@
+ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+    /* max-width:100%; */
+  }
+  .tabs {
+    overflow: hidden;
+    /* width:3000px; */
+  }
+  .tabs li,
+  .tabs label {
+    float: left;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: .3s;
+    /* width:20px; */
+  }
+  .tabs li:not(:first-child),
+  .tabs label:not(:first-of-type) {
+    border-left: none;
+  }
+  .tabs li.active,
+  .tabs :checked + label {
+    background-color: rgb(39, 170, 109);
+    border-color: rgb(39, 170, 109);;
+    color: #fff;
+    cursor: auto;
+  }
+  .contents{
+    overflow: hidden;
+    margin-top: -1px;
+  }
+  .contents li {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  .contents label{
+    max-width: 100%;
+  }
+  /* table{
+    width:100%;
+    table-layout:fixed;
+  } */
+  .data {
+    max-width: 100%;
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout:fixed;
+   }
+   .data th {
+    padding: 10px;
+    word-wrap:break-word;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+   }
+   .data td {
+    word-wrap:break-word;
+    padding: 10px;
+    border: solid 1px #778ca3;
+    /* color: red */
+   }
+img {
+  max-width:100%;
+  height:auto;
+}
+
+.optional {
+  background-color: #F3DBDB;
+}
+.no_range {
+  background-color: #F3F3DB;
+}
+.table_switch {
+  margin-right: auto;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout:fixed;
+}
+.table_switch th {
+  padding: 10px;
+  word-wrap:break-word;
+  background: #e9faf9;
+  border: solid 1px #778ca3;
+}
+.table_switch td {
+  word-wrap:break-word;
+  padding: 10px;
+  border: solid 1px #778ca3;
+}
+
+/* @import "../../node_modules/@triply/yasgui/build/yasgui.min.css";
+#yasgui{text-align: left}; */
+
+.yasgui .autocompleteWrapper {
+  display: none !important;
+}

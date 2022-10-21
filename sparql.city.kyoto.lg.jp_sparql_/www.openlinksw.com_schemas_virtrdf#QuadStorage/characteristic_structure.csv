@@ -1,0 +1,4 @@
+http://www.openlinksw.com/schemas/virtrdf#QuadStorage,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,uri,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadStorage,http://www.openlinksw.com/schemas/virtrdf#qsUserMaps,uri,http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadStorage,http://www.openlinksw.com/schemas/virtrdf#qsDefaultMap,uri,http://www.openlinksw.com/schemas/virtrdf#QuadMap,0.6666666666666666
+http://www.openlinksw.com/schemas/virtrdf#QuadStorage,http://www.openlinksw.com/schemas/virtrdf#qsMatchingFlags,uri,,0.6666666666666666

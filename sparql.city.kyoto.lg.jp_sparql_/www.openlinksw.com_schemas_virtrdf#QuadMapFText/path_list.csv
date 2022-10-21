@@ -1,0 +1,6 @@
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o1,uri,,1.0,1
+n,http://www.openlinksw.com/schemas/virtrdf#qmvftColumnName,o2,literal,,1.0,1
+n,http://www.openlinksw.com/schemas/virtrdf#qmvftXmlIndex,o3,typed-literal,,0.75,1
+n,http://www.openlinksw.com/schemas/virtrdf#qmvftAlias,o4,literal,,0,0
+n,http://www.openlinksw.com/schemas/virtrdf#qmvftConds,o5,uri,http://www.openlinksw.com/schemas/virtrdf#array-of-string,0,0
+n,http://www.openlinksw.com/schemas/virtrdf#qmvftTableName,o6,literal,,0,0

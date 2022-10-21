@@ -1,0 +1,13 @@
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o1,uri,http://www.w3.org/2002/07/owl#Class,1.0,1
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o2,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0,1
+n,http://purl.org/dc/terms/created,o3,typed-literal,,1.0,1
+n,http://purl.org/dc/terms/modified,o4,typed-literal,,1.0,1
+n,http://purl.org/dc/terms/title,o5,literal,,1.0,1
+n,http://purl.org/dc/terms/date,o6,typed-literal,,1.0,1
+n,http://rdfs.org/sioc/ns#has_creator,o7,uri,,0.5509632424398331,1
+n,http://rdfs.org/sioc/ns#num_replies,o8,typed-literal,,1.0,1
+n,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,o9,uri,,1.0,4
+n,http://www.w3.org/ns/dcat#accessURL,o10,uri,,0.9994283427656777,2
+n,http://purl.org/dc/terms/description,o11,literal,,0,0
+n,http://purl.org/dc/terms/format,o12,literal,,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#seeAlso,o13,uri,,0,0

@@ -1,0 +1,17 @@
+
+        select distinct ?n where{
+            ?n a <http://www.openlinksw.com/schemas/virtrdf#QuadMap>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmGraphMap> ?o2.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap> ?o3.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap> ?o4.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmObjectMap> ?o5.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmTableName> ?o6.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmMatchingFlags> ?o7.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1) && (count(distinct ?o2)=1) && (count(distinct ?o3)=1) && (count(distinct ?o4)=1) && (count(distinct ?o5)=1) && (count(distinct ?o6)=1) && (count(distinct ?o7)=1)
+        )
+    

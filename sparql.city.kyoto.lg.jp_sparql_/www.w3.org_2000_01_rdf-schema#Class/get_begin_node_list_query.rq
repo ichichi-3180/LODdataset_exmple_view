@@ -1,0 +1,11 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/2000/01/rdf-schema#Class>.
+            ?n <http://www.w3.org/2000/01/rdf-schema#label> ?o2.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o2)=1)
+        )
+    

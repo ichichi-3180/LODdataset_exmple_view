@@ -1,0 +1,13 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/2000/01/rdf-schema#label> ?o3.
+?n <http://www.w3.org/2000/01/rdf-schema#domain> ?o5.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1) && (count(distinct ?o3)=1) && (count(distinct ?o5)=1)
+        )
+    

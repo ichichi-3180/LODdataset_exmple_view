@@ -1,0 +1,13 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"->"http://www.w3.org/2000/01/rdf-schema#Class"[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"->LITERAL1[label="http://www.w3.org/2000/01/rdf-schema#label
+existprobab:1.0"]
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"->"http://www.w3.org/2002/07/owl#Ontology"[label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+existprobab:1.0"]
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"->LITERAL2[label="http://www.w3.org/2000/01/rdf-schema#comment
+existprobab:1.0"]
+LITERAL1[shape="box"]
+LITERAL2[shape="box"]
+}

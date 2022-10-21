@@ -1,0 +1,8 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable"->URI1[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable"->"http://www.openlinksw.com/schemas/virtrdf#QuadMapATable"[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#_1
+existprobab:1.0"]
+URI1[shape="ellipse"]
+}

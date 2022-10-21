@@ -1,0 +1,12 @@
+
+        select distinct ?n where{
+            ?n a <http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#_1> ?o2.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1) && (count(distinct ?o2)=1)
+        )
+    

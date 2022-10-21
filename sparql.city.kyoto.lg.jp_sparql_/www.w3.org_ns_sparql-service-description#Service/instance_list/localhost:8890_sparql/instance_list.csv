@@ -1,0 +1,14 @@
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/sparql-service-description#Service,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#endpoint,http://localhost:8890/sparql,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#feature,http://www.w3.org/ns/sparql-service-description#UnionDefaultGraph,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/RDFa,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#supportedLanguage,http://www.w3.org/ns/sparql-service-description#SPARQL10Query,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#url,http://localhost:8890/sparql,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/N-Triples,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/N3,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/RDF_XML,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/SPARQL_Results_CSV,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/SPARQL_Results_JSON,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/SPARQL_Results_XML,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#resultFormat,http://www.w3.org/ns/formats/Turtle,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://localhost:8890/sparql,http://www.w3.org/ns/sparql-service-description#feature,http://www.w3.org/ns/sparql-service-description#DereferencesURIs,uri,,1.0

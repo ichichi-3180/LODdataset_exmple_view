@@ -1,0 +1,11 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/2002/07/owl#Ontology>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1)
+        )
+    

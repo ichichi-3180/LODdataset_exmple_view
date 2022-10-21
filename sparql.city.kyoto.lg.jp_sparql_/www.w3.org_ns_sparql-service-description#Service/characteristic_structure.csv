@@ -1,0 +1,14 @@
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#endpoint,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#feature,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#feature,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#resultFormat,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#supportedLanguage,uri,,1.0
+http://www.w3.org/ns/sparql-service-description#Service,http://www.w3.org/ns/sparql-service-description#url,uri,http://www.w3.org/ns/sparql-service-description#Service,1.0

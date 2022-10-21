@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/created,2020-12-04T14:57:07+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/modified,2020-12-18T17:19:47+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/title,京都市長期統計書_8_国勢調査_d_産業（大分類），男女別15歳以上就職者数人口_P20,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/date,2020-12-04T14:57:07+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://rdfs.org/sioc/ns#has_creator,https://data.city.kyoto.lg.jp/users/johotokeid,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://rdfs.org/sioc/ns#num_replies,0,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/107337.rdf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/files/%E4%BA%AC%E9%83%BD%E5%B8%82%E9%95%B7%E6%9C%9F%E7%B5%B1%E8%A8%88%E6%9B%B88%E5%9B%BD%E5%8B%A2%E8%AA%BF%E6%9F%BBd%E7%94%A3%E6%A5%AD%EF%BC%88%E5%A4%A7%E5%88%86%E9%A1%9E%EF%BC%89%EF%BC%8C%E7%94%B7%E5%A5%B3%E5%88%A515%E6%AD%B3%E4%BB%A5%E4%B8%8A%E5%B0%B1%E8%81%B7%E8%80%85%E6%95%B0%E4%BA%BA%E5%8F%A3p20pdf,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/description,,literal,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://purl.org/dc/terms/format,pdf,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/107337.rdfjson,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/107337.ttl,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/107337.nt,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/107337,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/sites/default/files/resource-files/%E4%BA%AC%E9%83%BD%E5%B8%82%E9%95%B7%E6%9C%9F%E7%B5%B1%E8%A8%88%E6%9B%B8_8_%E5%9B%BD%E5%8B%A2%E8%AA%BF%E6%9F%BB_d_%E7%94%A3%E6%A5%AD%EF%BC%88%E5%A4%A7%E5%88%86%E9%A1%9E%EF%BC%89%EF%BC%8C%E7%94%B7%E5%A5%B3%E5%88%A515%E6%AD%B3%E4%BB%A5%E4%B8%8A%E5%B0%B1%E8%81%B7%E8%80%85%E6%95%B0%E4%BA%BA%E5%8F%A3_P20.pdf,uri,,0.9994283427656777

@@ -1,0 +1,21 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/ns/dcat#Distribution>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o2.
+?n <http://purl.org/dc/terms/created> ?o3.
+?n <http://purl.org/dc/terms/modified> ?o4.
+?n <http://purl.org/dc/terms/title> ?o5.
+?n <http://purl.org/dc/terms/date> ?o6.
+?n <http://rdfs.org/sioc/ns#has_creator> ?o7.
+?n <http://rdfs.org/sioc/ns#num_replies> ?o8.
+?n <http://xmlns.com/foaf/0.1/isPrimaryTopicOf> ?o9.
+?n <http://www.w3.org/ns/dcat#accessURL> ?o10.
+?n <http://purl.org/dc/terms/format> ?o12.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=1) && (count(distinct ?o2)=1) && (count(distinct ?o3)=1) && (count(distinct ?o4)=1) && (count(distinct ?o5)=1) && (count(distinct ?o6)=1) && (count(distinct ?o7)=1) && (count(distinct ?o8)=1) && (count(distinct ?o9)=4) && (count(distinct ?o10)=2) && (count(distinct ?o12)=1)
+        )
+    

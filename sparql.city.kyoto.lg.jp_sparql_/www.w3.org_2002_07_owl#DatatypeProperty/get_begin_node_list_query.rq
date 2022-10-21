@@ -1,0 +1,17 @@
+
+        select distinct ?n where{
+            ?n a <http://www.w3.org/2002/07/owl#DatatypeProperty>.
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/2000/01/rdf-schema#label> ?o3.
+?n <http://www.w3.org/2000/01/rdf-schema#domain> ?o4.
+?n <http://www.w3.org/2000/01/rdf-schema#domain> ?o5.
+?n <http://www.w3.org/2000/01/rdf-schema#range> ?o6.
+?n <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> ?o7.
+?n <http://www.w3.org/2000/01/rdf-schema#comment> ?o8.
+
+            
+        }GROUP BY ?n
+        HAVING (
+            (count(distinct ?o1)=2) && (count(distinct ?o3)=6) && (count(distinct ?o4)=1) && (count(distinct ?o5)=1) && (count(distinct ?o6)=1) && (count(distinct ?o7)=1) && (count(distinct ?o8)=6)
+        )
+    

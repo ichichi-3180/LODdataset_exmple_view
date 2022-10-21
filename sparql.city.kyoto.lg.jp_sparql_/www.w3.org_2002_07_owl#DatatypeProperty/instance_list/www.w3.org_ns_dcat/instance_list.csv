@@ -1,0 +1,21 @@
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#DatatypeProperty,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,,uri,,0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,keyword,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/ns/dcat#Dataset,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/ns/dcat#Dataset,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#range,http://www.w3.org/2000/01/rdf-schema#Literal,uri,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,http://www.w3.org/TR/vocab-dcat/,uri,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,كلمة  مفتاحيه توصف قائمة البيانات,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2002/07/owl#deprecated,,typed-literal,,0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://purl.org/vocab/vann/usageNote,,literal,,0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,mot-clés ,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,palabra clave,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,λέξη-κλειδί,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,كلمة  مفتاحية ,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#label,キーワード/タグ,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,Una palabra clave o etiqueta que describa al conjunto de datos.,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,データセットを記述しているキーワードまたはタグ。,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων.,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,A keyword or tag describing the dataset.,literal,,1.0
+http://www.w3.org/2002/07/owl#DatatypeProperty,http://www.w3.org/ns/dcat#keyword,http://www.w3.org/2000/01/rdf-schema#comment,Un mot-clé ou étiquette décrivant un jeu de donnnées.,literal,,1.0

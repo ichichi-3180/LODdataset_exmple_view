@@ -1,0 +1,10 @@
+n,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,o1,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0,2
+n,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,o2,uri,,0,0
+n,http://www.w3.org/2000/01/rdf-schema#label,o3,literal,,1.0,6
+n,http://www.w3.org/2000/01/rdf-schema#domain,o4,uri,http://www.w3.org/2002/07/owl#Class,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#domain,o5,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#range,o6,uri,http://www.w3.org/2002/07/owl#Class,0,0
+n,http://www.w3.org/2000/01/rdf-schema#range,o7,uri,http://www.w3.org/2000/01/rdf-schema#Class,0,0
+n,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,o8,uri,,1.0,1
+n,http://www.w3.org/2000/01/rdf-schema#comment,o9,literal,,1.0,6
+n,http://purl.org/vocab/vann/usageNote,o10,literal,,0,0

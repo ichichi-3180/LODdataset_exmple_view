@@ -1,0 +1,13 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"->URI1[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"->LITERAL1[label="http://www.openlinksw.com/schemas/virtrdf#qmfName
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"->"http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat"[label="http://www.openlinksw.com/schemas/virtrdf#qmfSuperFormats
+existprobab:0.7538461538461538"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"->"http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat"[label="http://www.openlinksw.com/schemas/virtrdf#inheritFrom
+existprobab:0.7615384615384615"]
+URI1[shape="ellipse"]
+LITERAL1[shape="box"]
+}

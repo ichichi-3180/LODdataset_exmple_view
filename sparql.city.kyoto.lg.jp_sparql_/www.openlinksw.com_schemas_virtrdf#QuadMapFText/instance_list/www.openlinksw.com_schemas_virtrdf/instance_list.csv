@@ -1,0 +1,6 @@
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,uri,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.openlinksw.com/schemas/virtrdf#qmvftColumnName,sinv_O,literal,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.openlinksw.com/schemas/virtrdf#qmvftXmlIndex,0,typed-literal,,0.75
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.openlinksw.com/schemas/virtrdf#qmvftAlias,,literal,,0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.openlinksw.com/schemas/virtrdf#qmvftConds,,uri,http://www.openlinksw.com/schemas/virtrdf#array-of-string,0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText,http://www.openlinksw.com/schemas/virtrdf#DefaultServiceMap-geo,http://www.openlinksw.com/schemas/virtrdf#qmvftTableName,,literal,,0

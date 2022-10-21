@@ -1,0 +1,13 @@
+
+        select distinct  ?o1 ?o2 ?o3 ?o4 ?o5 ?o6 ?o7 where{
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmGraphMap> ?o2.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmSubjectMap> ?o3.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmPredicateMap> ?o4.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmObjectMap> ?o5.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmTableName> ?o6.
+?n <http://www.openlinksw.com/schemas/virtrdf#qmMatchingFlags> ?o7.
+
+            filter (?n = <http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap>)
+        }
+    

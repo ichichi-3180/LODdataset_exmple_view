@@ -1,0 +1,17 @@
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/ns/dcat#Distribution,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/created,2020-03-18T09:45:26+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/modified,2020-04-23T13:31:01+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/title,二条城二の丸庭園立体画像_汎用版_Tile_+001_+001_データ４０－４,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/date,2020-03-18T09:45:26+09:00,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://rdfs.org/sioc/ns#has_creator,https://data.city.kyoto.lg.jp/users/nijojod,uri,,0.5509632424398331
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://rdfs.org/sioc/ns#num_replies,0,typed-literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/103900.rdf,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/files/%E4%BA%8C%E6%9D%A1%E5%9F%8E%E4%BA%8C%E3%81%AE%E4%B8%B8%E5%BA%AD%E5%9C%92%E7%AB%8B%E4%BD%93%E7%94%BB%E5%83%8F%E6%B1%8E%E7%94%A8%E7%89%88tile001001%E3%83%87%E3%83%BC%E3%82%BF%EF%BC%94%EF%BC%90%EF%BC%8D%EF%BC%94zip,uri,,0.9994283427656777
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/description,,literal,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://purl.org/dc/terms/format,zip,literal,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/103900.rdfjson,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/103900.ttl,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://xmlns.com/foaf/0.1/isPrimaryTopicOf,https://data.city.kyoto.lg.jp/node/103900.nt,uri,,1.0
+http://www.w3.org/ns/dcat#Distribution,https://data.city.kyoto.lg.jp/node/103900,http://www.w3.org/ns/dcat#accessURL,https://data.city.kyoto.lg.jp/sites/default/files/resource-files/%E4%BA%8C%E6%9D%A1%E5%9F%8E%E4%BA%8C%E3%81%AE%E4%B8%B8%E5%BA%AD%E5%9C%92%E7%AB%8B%E4%BD%93%E7%94%BB%E5%83%8F_%E6%B1%8E%E7%94%A8%E7%89%88_Tile_%2B001_%2B001_%E3%83%87%E3%83%BC%E3%82%BF%EF%BC%94%EF%BC%90%EF%BC%8D%EF%BC%94.zip,uri,,0.9994283427656777

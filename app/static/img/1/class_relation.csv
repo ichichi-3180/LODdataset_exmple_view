@@ -1,0 +1,7 @@
+http://dbpedia.org/ontology/HotSpring,http://ja.dbpedia.org/property/泉質,http://purl.org/net/hotspring/Quality
+http://dbpedia.org/ontology/HotSpring,https://schema.org/areaServed,https://schema.org/Hotel
+http://dbpedia.org/ontology/HotSpring,http://dbpedia.org/ontology/mascot,http://dbpedia.org/ontology/ambassador
+http://purl.org/net/hotspring/Quality,http://purl.org/net/hotspring/hasIndication,http://purl.org/net/hotspring/Indication
+http://dbpedia.org/ontology/ambassador,http://seiyu-lod.org/ontology/voicedBy,https://schema.org/Person
+http://dbpedia.org/ontology/ambassador,https://schema.org/creator,https://schema.org/Person
+http://dbpedia.org/ontology/ambassador,https://schema.org/member,https://schema.org/PerformingGroup

@@ -1,0 +1,10 @@
+digraph{
+    graph [rankdir = LR];
+"dbo:HotSpring"->"hs:Quality"[label="prop-ja:泉質"]
+"dbo:HotSpring"->"schemas:Hotel"[label="schemas:areaServed"]
+"dbo:HotSpring"->"dbo:ambassador"[label="dbo:mascot"]
+"hs:Quality"->"hs:Indication"[label="hs:hasIndication"]
+"dbo:ambassador"->"schemas:Person"[label="http://seiyu-lod.org/ontology/voicedBy"]
+"dbo:ambassador"->"schemas:Person"[label="schemas:creator"]
+"dbo:ambassador"->"schemas:PerformingGroup"[label="schemas:member"]
+}

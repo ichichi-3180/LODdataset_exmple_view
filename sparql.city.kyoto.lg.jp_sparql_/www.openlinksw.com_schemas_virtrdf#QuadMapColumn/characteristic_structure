@@ -1,0 +1,12 @@
+digraph{
+        graph [rankdir = LR];
+    "http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn"->URI1[label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn"->LITERAL1[label="http://www.openlinksw.com/schemas/virtrdf#qmvcAlias
+existprobab:1.0"]
+"http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn"->LITERAL2[label="http://www.openlinksw.com/schemas/virtrdf#qmvcColumnName
+existprobab:1.0"]
+URI1[shape="ellipse"]
+LITERAL1[shape="box"]
+LITERAL2[shape="box"]
+}

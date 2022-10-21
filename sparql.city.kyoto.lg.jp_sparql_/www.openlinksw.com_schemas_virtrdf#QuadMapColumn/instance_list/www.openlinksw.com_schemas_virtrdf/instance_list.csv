@@ -1,0 +1,3 @@
+http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn,http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-P-col-P,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn,uri,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn,http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-P-col-P,http://www.openlinksw.com/schemas/virtrdf#qmvcAlias,!pquad,literal,,1.0
+http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn,http://www.openlinksw.com/schemas/virtrdf#DefaultQuadMap-P-col-P,http://www.openlinksw.com/schemas/virtrdf#qmvcColumnName,P,literal,,1.0

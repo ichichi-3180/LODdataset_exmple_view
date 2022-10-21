@@ -1,0 +1,112 @@
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#Ontology,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/modified,,typed-literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2000/01/rdf-schema#label,,literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2002/07/owl#imports,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2000/01/rdf-schema#comment,,literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2002/07/owl#versionInfo,,literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://www.w3.org/2002/07/owl#priorVersion,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210277,bnode,,0
+bnode,nodeID://b210277,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210277,http://xmlns.com/foaf/0.1/name,Boris Villazón-Terrazas,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/elements/1.1/description,,literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/elements/1.1/title,,literal,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210277,bnode,,0
+bnode,nodeID://b210277,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210277,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210270,bnode,,0
+bnode,nodeID://b210270,http://xmlns.com/foaf/0.1/name,Phil Archer,literal,,1.0
+bnode,nodeID://b210270,http://xmlns.com/foaf/0.1/homepage,http://www.w3.org/People/all#phila,uri,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210273,bnode,,0
+bnode,nodeID://b210273,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210273,http://xmlns.com/foaf/0.1/name,"European Commission, DG DIGIT",literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210268,bnode,,0
+bnode,nodeID://b210268,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210268,http://xmlns.com/foaf/0.1/name,Fadi Maali,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210276,bnode,,0
+bnode,nodeID://b210276,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210276,http://xmlns.com/foaf/0.1/name,Ghislain Auguste Atemezing,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210282,bnode,,0
+bnode,nodeID://b210282,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210282,http://xmlns.com/foaf/0.1/name,Government Linked Data WG,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210269,bnode,,0
+bnode,nodeID://b210269,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210269,http://xmlns.com/foaf/0.1/name,John Erickson,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210280,bnode,,0
+bnode,nodeID://b210280,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210280,http://xmlns.com/foaf/0.1/name,Makx Dekkers,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210278,bnode,,0
+bnode,nodeID://b210278,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210278,http://xmlns.com/foaf/0.1/name,Marios Meimaris,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210279,bnode,,0
+bnode,nodeID://b210279,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210279,http://xmlns.com/foaf/0.1/name,Martin Alvarez-Espinar,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210275,bnode,,0
+bnode,nodeID://b210275,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210275,http://xmlns.com/foaf/0.1/name,Open Knowledge Foundation,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210270,bnode,,0
+bnode,nodeID://b210270,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210271,bnode,,0
+bnode,nodeID://b210271,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210271,http://xmlns.com/foaf/0.1/name,Richard Cyganiak,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210274,bnode,,0
+bnode,nodeID://b210274,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210274,http://xmlns.com/foaf/0.1/name,Rufus Pollock,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210281,bnode,,0
+bnode,nodeID://b210281,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210281,http://xmlns.com/foaf/0.1/name,Shuji Kamitsuna,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/creator,nodeID://b210272,bnode,,0
+bnode,nodeID://b210272,http://www.w3.org/2000/01/rdf-schema#seeAlso,,uri,,0
+bnode,nodeID://b210272,http://xmlns.com/foaf/0.1/name,Vassilios Peristeras,literal,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210273,bnode,,0
+bnode,nodeID://b210273,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210273,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210268,bnode,,0
+bnode,nodeID://b210268,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210268,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210276,bnode,,0
+bnode,nodeID://b210276,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210276,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210282,bnode,,0
+bnode,nodeID://b210282,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210282,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210269,bnode,,0
+bnode,nodeID://b210269,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210269,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210280,bnode,,0
+bnode,nodeID://b210280,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210280,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210278,bnode,,0
+bnode,nodeID://b210278,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210278,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210279,bnode,,0
+bnode,nodeID://b210279,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210279,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210275,bnode,,0
+bnode,nodeID://b210275,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210275,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210270,bnode,,0
+bnode,nodeID://b210270,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210270,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210271,bnode,,0
+bnode,nodeID://b210271,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210271,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210274,bnode,,0
+bnode,nodeID://b210274,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210274,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210281,bnode,,0
+bnode,nodeID://b210281,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210281,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://purl.org/dc/terms/contributor,nodeID://b210272,bnode,,0
+bnode,nodeID://b210272,http://schema.org/affiliation,,uri,,0
+bnode,nodeID://b210272,http://xmlns.com/foaf/0.1/homepage,,uri,,0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210273,bnode,,0
+bnode,nodeID://b210273,http://xmlns.com/foaf/0.1/homepage,http://ec.europa.eu/dgs/informatics/,uri,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210275,bnode,,0
+bnode,nodeID://b210275,http://xmlns.com/foaf/0.1/homepage,http://okfn.org,uri,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210280,bnode,,0
+bnode,nodeID://b210280,http://xmlns.com/foaf/0.1/homepage,http://makxdekkers.com/,uri,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210281,bnode,,0
+bnode,nodeID://b210281,http://xmlns.com/foaf/0.1/homepage,http://www.asahi-net.or.jp/~ax2s-kmtn/,uri,,1.0
+http://www.w3.org/2002/07/owl#Ontology,http://www.w3.org/1999/02/22-rdf-syntax-ns#,http://xmlns.com/foaf/0.1/maker,nodeID://b210282,bnode,,0
+bnode,nodeID://b210282,http://xmlns.com/foaf/0.1/homepage,http://www.w3.org/2011/gld/,uri,,1.0

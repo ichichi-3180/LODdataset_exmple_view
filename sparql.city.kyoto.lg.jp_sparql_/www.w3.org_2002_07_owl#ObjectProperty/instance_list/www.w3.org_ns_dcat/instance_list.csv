@@ -1,0 +1,21 @@
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#ObjectProperty,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#subPropertyOf,,uri,,0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,conjunto de datos,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/ns/dcat#Catalog,uri,http://www.w3.org/2002/07/owl#Class,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#domain,http://www.w3.org/ns/dcat#Catalog,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#range,,uri,http://www.w3.org/2002/07/owl#Class,0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#range,,uri,http://www.w3.org/2000/01/rdf-schema#Class,0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#isDefinedBy,http://www.w3.org/TR/vocab-dcat/,uri,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,Links a catalog to a dataset that is part of the catalog.,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://purl.org/vocab/vann/usageNote,,literal,,0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,dataset,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,jeu de données,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,σύνολο δεδομένων,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,قائمة بيانات,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#label,データセット,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/1999/02/22-rdf-syntax-ns#Property,uri,http://www.w3.org/2000/01/rdf-schema#Class,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,Enlaza un catálogo a un conjunto de datos que es parte de ese catálogo,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,تربط الفهرس بقائمة بيانات ضمنه,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,カタログの一部であるデータセット。,literal,,1.0
+http://www.w3.org/2002/07/owl#ObjectProperty,http://www.w3.org/ns/dcat#dataset,http://www.w3.org/2000/01/rdf-schema#comment,Relie un catalogue à un jeu de données faisant partie de ce catalogue,literal,,1.0

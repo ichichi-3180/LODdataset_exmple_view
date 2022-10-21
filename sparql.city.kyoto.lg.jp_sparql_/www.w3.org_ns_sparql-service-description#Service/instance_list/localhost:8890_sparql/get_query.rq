@@ -1,0 +1,12 @@
+
+        select distinct  ?o1 ?o2 ?o3 ?o4 ?o5 ?o6 where{
+            ?n <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?o1.
+?n <http://www.w3.org/ns/sparql-service-description#endpoint> ?o2.
+?n <http://www.w3.org/ns/sparql-service-description#feature> ?o3.
+?n <http://www.w3.org/ns/sparql-service-description#resultFormat> ?o4.
+?n <http://www.w3.org/ns/sparql-service-description#supportedLanguage> ?o5.
+?n <http://www.w3.org/ns/sparql-service-description#url> ?o6.
+
+            filter (?n = <http://localhost:8890/sparql>)
+        }
+    
