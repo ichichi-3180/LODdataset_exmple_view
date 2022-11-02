@@ -364,52 +364,7 @@
                 var dict = prefix_info[name_space] + ': <' + name_space + '>'
                 yasgui.getTab().yasqe.addPrefixes(dict);
             }
-            // yasgui.getTab().yasqe.addPrefixes({ dbo: "http://dbpedia.org/ontology/" });
-            // // Add a new Tab. Returns the new Tab object.
-            // yasgui.addTab(
-            // true, // set as active tab
-            // { ...Yasgui.Tab.getDefaults(), name: "my new tab" }
-            // );
-
-            // // Get a Tab. Returns the current Tab if no tab id is given.
-            // yasgui.getTab("tab_id_x");
         </script>
-        <!-- <div id="yasqe"></div>
-        <script>
-            const yasqe = new Yasqe(document.getElementById("yasqe"));
-            // Set query value in editor
-            yasqe.setValue("select * where {...}");
-
-            // Get query value from editor
-            yasqe.getValue();
-
-            // execute a query
-            yasqe.query({
-            url: "https://dbpedia.org/sparql",
-            reqMethod: "POST", // or "GET"
-            headers: { Accept: "..." /*...*/ },
-            args: { arg1: "val1" /*...*/ },
-            withCredentials: false,
-            });
-
-            // get whether we're in query or update mode
-            yasqe.getQueryMode();
-
-            // get the query type (select, ask, construct, ...)
-            yasqe.getQueryType();
-
-            // get prefixes map from the query string
-            yasqe.getPrefixesFromQuery();
-
-            // Add prefixes to the query.
-            yasqe.addPrefixes({ dbo: "http://dbpedia.org/ontology/" });
-
-            // set size of input area
-            // yasqe.setSize(500, 300);
-
-            // Collapsing prefixes if there are any. Use false to expand them.
-            yasqe.collapsePrefixes(true);
-        </script> -->
         <h2>名前空間と接頭辞の組み合わせ</h2>
         <table class="data">
             <tr>
