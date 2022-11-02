@@ -138,4 +138,4 @@ def detail():
         class_triple_list.append([class_info[0], class_info[1], display_triple_list_sorted])
     
 
-    return render_template("instance.html", endpoint_info=endpoint_info, class_triple_list=class_triple_list, prefix_info=prefix_info)
+    return render_template("endpoint_detail.html", endpoint_info=endpoint_info, class_triple_list=class_triple_list, prefix_info=prefix_info)
