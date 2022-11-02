@@ -98,6 +98,6 @@ img {
 /* @import "../../node_modules/@triply/yasgui/build/yasgui.min.css";
 #yasgui{text-align: left}; */
 
-.yasgui .autocompleteWrapper {
+/* .yasgui .autocompleteWrapper {
   display: none !important;
-}
+} */
