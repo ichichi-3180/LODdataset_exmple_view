@@ -12,12 +12,12 @@ import collections
 import pprint
 import csv
 import math
-from sqlalchemy.dialects.sqlite import insert
+# from sqlalchemy.dialects.sqlite import insert
 import glob
 import sqlite3
 
 
-endpoint = 'http://localhost:3030/NDL'
+# endpoint = 'http://localhost:3030/NDL'
 # endpoint = 'http://localhost:3030/sample_isil'
 # endpoint = 'http://localhost:3030/onsen_sample'
 # endpoint = 'http://localhost:3030/NDL_sample_1000_from_public'
@@ -26,7 +26,7 @@ endpoint = 'http://localhost:3030/NDL'
 # endpoint = 'http://localhost:3030/vtuber' # inbound->Personクラス instance->VideoObjectクラス
 # endpoint = 'http://localhost:3030/omiyage'
 # endpoint='https://id.ndl.go.jp/auth/ndla/sparql'
-# endpoint = 'http://localhost:3030/textbook'
+endpoint = 'http://localhost:3030/textbook'
 # endpoint = 'http://localhost:3030/isil'
 # endpoint = 'http://localhost:3030/vlueprint'
 # endpoint = 'http://localhost:3030/media-arts-db'
