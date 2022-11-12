@@ -13,12 +13,8 @@
     <body>
         <h1>{{ endpoint_info.name }}</h1>
         <h2>クラス間関係</h2>
-        <img src="static/img/{{endpoint_info.id}}/structure.svg">
+        <img src="static/img/{{endpoint_info.id}}/structure.svg" border="1">
         <h2>各クラスの近傍</h2>
-        <form action="/endpoint_info" method="POST">
-            <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
-            <input type="submit" value="違うデータを見る">
-        </form>
         <div id="app">
             <div>
                 <table class="table_switch"> 
@@ -318,10 +314,13 @@
             </ul>
         </div>
         <div>
+            <form action="/endpoint_info" method="POST" name="variant_data">
+                <input type="hidden" name="endpoint_id" value="{{endpoint_info.id}}">
+                <a href="javascript:variant_data.submit()">違うデータを見る</a>
+            </form>
             <a href="/">ホームに戻る</a>
         </div>
         <br>
-        <h2>{{endpoint_info.url}}</h2>
         <div id="yasgui"></div>
         <script>
             const yasgui = new Yasgui(document.getElementById("yasgui"), {
