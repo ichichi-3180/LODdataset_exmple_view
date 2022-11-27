@@ -18,7 +18,7 @@
         <div id="app">
             <div>
                 <table class="table_switch"> 
-                    <tr><th colspan="2">表示プロパティの選択</th></tr>
+                    <tr><th colspan="2">表示プロパティ(述語)の選択</th></tr>
                     <tr><td class="optional">OPTIONAL</td><td class="no_range">OTHER</td></tr>
                     <tr>
                         <td>
@@ -54,10 +54,10 @@
                 <li v-if="isActive === '1'"> <!-- 最初のデータ-->
                     <table class="data">
                         <tr>
-                            <th>ドメイン</th>
-                            <th>プロパティ</th>
-                            <th>レンジ</th>
-                            <th>レンジデータ型</th>
+                            <th>ドメイン(主語)</th>
+                            <th>プロパティ(述語)</th>
+                            <th>レンジ(目的語)</th>
+                            <th>レンジ(目的語)データ型</th>
                         </tr>
 
                         {% for triple in class_triple_list[0][2] %}
@@ -189,10 +189,10 @@
                     <li v-else-if="isActive === '{{i+2}}'">
                         <table class="data">
                             <tr>
-                                <th>ドメイン</th>
-                                <th>プロパティ</th>
-                                <th>レンジ</th>
-                                <th>レンジデータ型</th>
+                                <th>ドメイン(主語)</th>
+                                <th>プロパティ(述語)</th>
+                                <th>レンジ(目的語)</th>
+                                <th>レンジ(目的語)データ型</th>
                             </tr>
                             {% for triple in class_triple_list[i+1][2] %}
                                 {% if triple["probability"] > 0.99 %}
@@ -203,7 +203,7 @@
                                             <!-- {{ triple["range"]["class"]|length }} -->
                                             {% if triple["range"]["datatype"] == "bnode" and triple["range"]["class"]|length == 0 %}
                                                 <table class="data">
-                                                    <tr><th>プロパティ</th><th>レンジ</th></tr>
+                                                    <tr><th>プロパティ(述語)</th><th>レンジ(目的語)</th></tr>
                                                     {% for j in range(triple["range"]["content"]|length) %}
                                                         {% if triple["range"]["content"][j]["probability"] > 0.99 %}
                                                             <tr>
@@ -330,8 +330,8 @@
             });
             
             const query = 'SELECT * WHERE {\n \
-                ?sub ?pred ?obj .\n\
-            } LIMIT 10' 
+    ?sub ?pred ?obj .\n\
+} LIMIT 10' 
             yasgui.getTab().yasqe.setValue(query);
             yasgui.getTab().yasqe.getPrefixesFromQuery();
             var prefix_info = {{ prefix_info|tojson }}
